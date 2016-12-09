@@ -2,1157 +2,122 @@
 
 class App{
   constructor(){
-    this.media = [
-  {
-    "img" : "img/bread2.jpg",
-    "alignment" : "caption center-align",
-    "slogan" : "<p>Special Breads!</p>"
-    
-    
-    
-  },
-  {"img" : "img/bread.jpg",
-    "alignment" : "caption left-align",
-    "slogan" : "<p>Everything you Want</p>"
-    
-    
-  }, 
-  {"img" : "img/bread1.jpg",
-    "alignment" : "caption right-align",
-    "slogan" : "<p>Bigger and Tastier!</p>"
-   
-    
-  } ,
-  {"img" : "img/br.jpg",
-  "alignment" : "caption center-align",
-  "slogan" : "<p>JabzzKillerBread</p>"
-  
-  
-  }
-    ];
-    this.recipe = [
-  { 
-    "id": 1,
-    "img" : "img/melon.jpg",
-    "title" : "<p>Melon Pan</p>",
-    "content" : "<p>A Melon Pan is a type of sweet bun from Japan, that is also popular in Taiwan, China and Latin America. They are made from an enriched dough covered in a thin layer of crisp cookie dough. </p>",
-    
-    "ingredients":[
-          {
-            "qty": "1 large bunch",
-            "name": "spinach"
-          },
-          {
-            "qty": "1/2 small",
-            "name": "butternut squash"
-          },
-          {
-            "qty": "200 g",
-            "name": "sliced okra"
-          },
-          {
-            "qty": "250 g",
-            "name": "fatty minced pork"
-          },
-          {
-            "qty": "6 cups",
-            "name": "chicken stock"
-          },
-          {
-            "qty": "1",
-            "name": "finely chopped onion"
-          },
-          {
-            "qty": "4 cloves",
-            "name": "minced garlic"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "fish sauce"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "1",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "15 minutes",
-        "cookingtime": "20 minutes",
-        "totaltime": "4-5 servings",
-         "directions": [
-          "In a pot add oil then sauté garlic, ginger and onions.",
-          "Add the pork mince and cook until brown in colour.",
-          "Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-          "Add the squash cook for 3 minutes.",
-          "Add the okra and cook for 3 more minutes.",
-          "Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-        ]
-      },
-    
-    
-  
-  { "id": 2,
-    "img" : "img/british.jpg",
-    "title" : "<p>Pesto Pinwheel</p>",
-    "content" : "<p>This loaf, filled with homemade pesto, walnuts, is made for sharing and would made a lovely addition to any picnic. </p>",
-    
-    "ingredients":[
-          {
-            "qty": "1 large bunch",
-            "name": "spinach"
-          },
-          {
-            "qty": "1/2 small",
-            "name": "butternut squash"
-          },
-          {
-            "qty": "200 g",
-            "name": "sliced okra"
-          },
-          {
-            "qty": "250 g",
-            "name": "fatty minced pork"
-          },
-          {
-            "qty": "6 cups",
-            "name": "chicken stock"
-          },
-          {
-            "qty": "1",
-            "name": "finely chopped onion"
-          },
-          {
-            "qty": "4 cloves",
-            "name": "minced garlic"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "fish sauce"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "1",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "15 minutes",
-        "cookingtime": "20 minutes",
-        "totaltime": "4-5 servings",
-         "directions": [
-          "In a pot add oil then sauté garlic, ginger and onions.",
-          "Add the pork mince and cook until brown in colour.",
-          "Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-          "Add the squash cook for 3 minutes.",
-          "Add the okra and cook for 3 more minutes.",
-          "Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-        ]
-      },
-    
-  
-  {
-    "id": 3,
-    "img" : "img/whats.jpg",
-    "title" : "<p>Sourdough bread</p>",
-    "content" : "<p>Sourdough bread has a mildly sour taste not present in most breads made with bakers yeast and better inherent keeping qualities than other breads, due to the lactic acid produced by the lactobacilli. </p>",
-    
-    "ingredients":[
-          {
-            "qty": "1 large bunch",
-            "name": "spinach"
-          },
-          {
-            "qty": "1/2 small",
-            "name": "butternut squash"
-          },
-          {
-            "qty": "200 g",
-            "name": "sliced okra"
-          },
-          {
-            "qty": "250 g",
-            "name": "fatty minced pork"
-          },
-          {
-            "qty": "6 cups",
-            "name": "chicken stock"
-          },
-          {
-            "qty": "1",
-            "name": "finely chopped onion"
-          },
-          {
-            "qty": "4 cloves",
-            "name": "minced garlic"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "fish sauce"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "1",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "15 minutes",
-        "cookingtime": "20 minutes",
-        "totaltime": "4-5 servings",
-        "directions": [
-          "In a pot add oil then sauté garlic, ginger and onions.",
-          "Add the pork mince and cook until brown in colour.",
-          "Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-          "Add the squash cook for 3 minutes.",
-          "Add the okra and cook for 3 more minutes.",
-          "Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-        ]
-      },
-    
+    this.guitar = [
 
   {
-     "id": 4,
-    "img" : "img/aw.jpg",
-    "title" : "<p>Rye Pan</p>",
-    "content" : "<p>A Melon Pan is a type of sweet bun from Japan, that is also popular in Taiwan, China and Latin America. They are made from an enriched dough covered in a thin layer of crisp cookie dough.</p>",
-    
-    "ingredients":[
-          {
-            "qty": "1 large bunch",
-            "name": "spinach"
-          },
-          {
-            "qty": "1/2 small",
-            "name": "butternut squash"
-          },
-          {
-            "qty": "200 g",
-            "name": "sliced okra"
-          },
-          {
-            "qty": "250 g",
-            "name": "fatty minced pork"
-          },
-          {
-            "qty": "6 cups",
-            "name": "chicken stock"
-          },
-          {
-            "qty": "1",
-            "name": "finely chopped onion"
-          },
-          {
-            "qty": "4 cloves",
-            "name": "minced garlic"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "fish sauce"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "1",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "15 minutes",
-        "cookingtime": "20 minutes",
-        "totaltime": "4-5 servings",
-         "directions": [
-          "In a pot add oil then sauté garlic, ginger and onions.",
-          "Add the pork mince and cook until brown in colour.",
-          "Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-          "Add the squash cook for 3 minutes.",
-          "Add the okra and cook for 3 more minutes.",
-          "Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-        ]
+        "id": 1,
+        "name": "Epiphone Acoustic Guitar",
+        "details": "The Epiphone DR-100 Acoustic Guitar is a nicely crafted acoustic guitar that sports a select spruce top and mahogany body and neck. This guitar epitomizes Epiphone's focus on affordable quality. Epiphone builds the DR-100 Acoustic Guitar with chrome hardware, precision construction, and rosewood fingerboard with dot inlays.",
+        "image": "img/epiphone acoustic guitar.jpg",
+        "price": "₱17,302"
+      
       },
- 
-  {
-     "id": 5,
-    "img" : "img/ds.jpg",
-    "title" : "<p>Fried Bread</p>",
-    "content" : "<p>Fried bread is a slice of bread which is fried. A full English breakfast will often include fried bread fried in oil, butter, lard, or bacon drippings.</p>",
-    
-    "ingredients":[
-          {
-            "qty": "1 large bunch",
-            "name": "spinach"
-          },
-          {
-            "qty": "1/2 small",
-            "name": "butternut squash"
-          },
-          {
-            "qty": "200 g",
-            "name": "sliced okra"
-          },
-          {
-            "qty": "250 g",
-            "name": "fatty minced pork"
-          },
-          {
-            "qty": "6 cups",
-            "name": "chicken stock"
-          },
-          {
-            "qty": "1",
-            "name": "finely chopped onion"
-          },
-          {
-            "qty": "4 cloves",
-            "name": "minced garlic"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "fish sauce"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "1",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "15 minutes",
-        "cookingtime": "20 minutes",
-       "totaltime": "4-5 servings",
-         "directions": [
-          "In a pot add oil then sauté garlic, ginger and onions.",
-          "Add the pork mince and cook until brown in colour.",
-          "Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-          "Add the squash cook for 3 minutes.",
-          "Add the okra and cook for 3 more minutes.",
-          "Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-        ]
-      },
- 
-  {
-    "id": 6,
-    "img" : "img/sandwich.jpg",
-    "title" : "<p>Navajo Taco</p>",
-    "content" : "<p>A frybread taco, Indian taco, or Navajo taco, is a frybread topped with various items normally found in tacos. A typical frybread recipe consists of flour, water, salt, a small amount of oil, and baking powder.</p>",
-    
-    "ingredients":[
-          {
-            "qty": "1 large bunch",
-            "name": "spinach"
-          },
-          {
-            "qty": "1/2 small",
-            "name": "butternut squash"
-          },
-          {
-            "qty": "200 g",
-            "name": "sliced okra"
-          },
-          {
-            "qty": "250 g",
-            "name": "fatty minced pork"
-          },
-          {
-            "qty": "6 cups",
-            "name": "chicken stock"
-          },
-          {
-            "qty": "1",
-            "name": "finely chopped onion"
-          },
-          {
-            "qty": "4 cloves",
-            "name": "minced garlic"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "fish sauce"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "1",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "15 minutes",
-        "cookingtime": "20 minutes",
-        "totaltime": "4-5 servings",
-        "directions": [
-          "In a pot add oil then sauté garlic, ginger and onions.",
-          "Add the pork mince and cook until brown in colour.",
-          "Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-          "Add the squash cook for 3 minutes.",
-          "Add the okra and cook for 3 more minutes.",
-          "Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-        ]
-      },
-
-   {
-    "id": 7,
-    "img" : "img/banana bread.jpg",
-    "title" : "<p>Banana Bread</p>",
-    "content" : "<p></p>",
-    
-    "ingredients":[
-          {
-            "qty": "1 large bunch",
-            "name": "spinach"
-          },
-          {
-            "qty": "1/2 small",
-            "name": "butternut squash"
-          },
-          {
-            "qty": "200 g",
-            "name": "sliced okra"
-          },
-          {
-            "qty": "250 g",
-            "name": "fatty minced pork"
-          },
-          {
-            "qty": "6 cups",
-            "name": "chicken stock"
-          },
-          {
-            "qty": "1",
-            "name": "finely chopped onion"
-          },
-          {
-            "qty": "4 cloves",
-            "name": "minced garlic"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "fish sauce"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "1",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "15 minutes",
-        "cookingtime": "20 minutes",
-        "totaltime": "4-5 servings",
-         "directions": [
-          "In a pot add oil then sauté garlic, ginger and onions.",
-          "Add the pork mince and cook until brown in colour.",
-          "Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-          "Add the squash cook for 3 minutes.",
-          "Add the okra and cook for 3 more minutes.",
-          "Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-        ]
-      
-  },
-   {
-    "id": 8,
-    "img" : "img/cheese buns.jpg",
-    "title" : "<p>Cranberry Cream Cheees Bun</p>",
-    "content" : "<p> Tasted more like a plain Cranberry bun with a cheese.</p>",
-    "ingredients":[
-          {
-            "qty": "1 large bunch",
-            "name": "spinach"
-          },
-          {
-            "qty": "1/2 small",
-            "name": "butternut squash"
-          },
-          {
-            "qty": "200 g",
-            "name": "sliced okra"
-          },
-          {
-            "qty": "250 g",
-            "name": "fatty minced pork"
-          },
-          {
-            "qty": "6 cups",
-            "name": "chicken stock"
-          },
-          {
-            "qty": "1",
-            "name": "finely chopped onion"
-          },
-          {
-            "qty": "4 cloves",
-            "name": "minced garlic"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "fish sauce"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "1",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "15 minutes",
-        "cookingtime": "20 minutes",
-        "totaltime": "4-5 servings",
-         "directions": [
-          "In a pot add oil then sauté garlic, ginger and onions.",
-          "Add the pork mince and cook until brown in colour.",
-          "Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-          "Add the squash cook for 3 minutes.",
-          "Add the okra and cook for 3 more minutes.",
-          "Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-        ]
-      
-  },
-   {
-    "id": 9,
-    "img" : "img/corn bread.jpg",
-    "title" : "<p>Buttermilk Corn Bread</p>",
-    "content" : "<p>These corn bread is the best sweet and moist.</p>",
-  
-    "ingredients":[
-          {
-            "qty": "1 large bunch",
-            "name": "spinach"
-          },
-          {
-            "qty": "1/2 small",
-            "name": "butternut squash"
-          },
-          {
-            "qty": "200 g",
-            "name": "sliced okra"
-          },
-          {
-            "qty": "250 g",
-            "name": "fatty minced pork"
-          },
-          {
-            "qty": "6 cups",
-            "name": "chicken stock"
-          },
-          {
-            "qty": "1",
-            "name": "finely chopped onion"
-          },
-          {
-            "qty": "4 cloves",
-            "name": "minced garlic"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "fish sauce"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "1",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "15 minutes",
-        "cookingtime": "20 minutes",
-       "totaltime": "4-5 servings",
-        "directions": [
-          "In a pot add oil then sauté garlic, ginger and onions.",
-          "Add the pork mince and cook until brown in colour.",
-          "Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-          "Add the squash cook for 3 minutes.",
-          "Add the okra and cook for 3 more minutes.",
-          "Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-        ]
-      },
-  
-   {
-    "id": 10,
-    "img" : "img/cottage loaf.jpg",
-    "title" : "<p>Cottage Loaf</p>",
-    "content" : "<p>It is caracterised by its shape, which is essentiallythat of two round loaves.</p>",
-    
-    "ingredients":[
-          {
-            "qty": "1 large bunch",
-            "name": "spinach"
-          },
-          {
-            "qty": "1/2 small",
-            "name": "butternut squash"
-          },
-          {
-            "qty": "200 g",
-            "name": "sliced okra"
-          },
-          {
-            "qty": "250 g",
-            "name": "fatty minced pork"
-          },
-          {
-            "qty": "6 cups",
-            "name": "chicken stock"
-          },
-          {
-            "qty": "1",
-            "name": "finely chopped onion"
-          },
-          {
-            "qty": "4 cloves",
-            "name": "minced garlic"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "fish sauce"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "1",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "15 minutes",
-        "cookingtime": "20 minutes",
-        "totaltime": "4-5 servings",
-         "directions": [
-          "In a pot add oil then sauté garlic, ginger and onions.",
-          "Add the pork mince and cook until brown in colour.",
-          "Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-          "Add the squash cook for 3 minutes.",
-          "Add the okra and cook for 3 more minutes.",
-          "Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-        ]
-      
-  },
-   {
-    "id": 11,
-    "img" : "img/manchet loaf.jpg",
-    "title" : "<p>Manchet loaf</p>",
-    "content" : "<p>is a wheaten yeast bread of every quality, or a small flat circular loaf of same.</p>",
-    
-    "ingredients":[
-          {
-            "qty": "1 large bunch",
-            "name": "spinach"
-          },
-          {
-            "qty": "1/2 small",
-            "name": "butternut squash"
-          },
-          {
-            "qty": "200 g",
-            "name": "sliced okra"
-          },
-          {
-            "qty": "250 g",
-            "name": "fatty minced pork"
-          },
-          {
-            "qty": "6 cups",
-            "name": "chicken stock"
-          },
-          {
-            "qty": "1",
-            "name": "finely chopped onion"
-          },
-          {
-            "qty": "4 cloves",
-            "name": "minced garlic"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "fish sauce"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "1",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "15 minutes",
-        "cookingtime": "20 minutes",
-        "totaltime": "4-5 servings",
-        "directions": [
-          "In a pot add oil then sauté garlic, ginger and onions.",
-          "Add the pork mince and cook until brown in colour.",
-          "Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-          "Add the squash cook for 3 minutes.",
-          "Add the okra and cook for 3 more minutes.",
-          "Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-        ]
-      
-  },
-   {
-    "id": 12,
-    "img" : "img/pepperoni rolls.jpg",
-    "title" : "<p>Pepperoni Rolls</p>",
-    "content" : "<p>consists of a fairl soft white yeast breadrole with pepperoni baked in the middle</p>",
-    
-    "ingredients":[
-          {
-            "qty": "1 large bunch",
-            "name": "spinach"
-          },
-          {
-            "qty": "1/2 small",
-            "name": "butternut squash"
-          },
-          {
-            "qty": "200 g",
-            "name": "sliced okra"
-          },
-          {
-            "qty": "250 g",
-            "name": "fatty minced pork"
-          },
-          {
-            "qty": "6 cups",
-            "name": "chicken stock"
-          },
-          {
-            "qty": "1",
-            "name": "finely chopped onion"
-          },
-          {
-            "qty": "4 cloves",
-            "name": "minced garlic"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "fish sauce"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "1",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "15 minutes",
-        "cookingtime": "20 minutes",
-        "totaltime": "4-5 servings",
-        "directions": [
-          "In a pot add oil then sauté garlic, ginger and onions.",
-          "Add the pork mince and cook until brown in colour.",
-          "Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-          "Add the squash cook for 3 minutes.",
-          "Add the okra and cook for 3 more minutes.",
-          "Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-        ]
-      
-  },
-   {
-    "id": 13,
-    "img" : "img/red bbang.jpg",
-    "title" : "<p>Sweet Red Bean Bbang</p>",
-    "content" : "<p>Most popular red bean paste in korea.</p>",
-  
-    "ingredients":[
-          {
-            "qty": "1 large bunch",
-            "name": "spinach"
-          },
-          {
-            "qty": "1/2 small",
-            "name": "butternut squash"
-          },
-          {
-            "qty": "200 g",
-            "name": "sliced okra"
-          },
-          {
-            "qty": "250 g",
-            "name": "fatty minced pork"
-          },
-          {
-            "qty": "6 cups",
-            "name": "chicken stock"
-          },
-          {
-            "qty": "1",
-            "name": "finely chopped onion"
-          },
-          {
-            "qty": "4 cloves",
-            "name": "minced garlic"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "fish sauce"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "1",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "15 minutes",
-        "cookingtime": "20 minutes",
-       "totaltime": "4-5 servings",
-         "directions": [
-          "In a pot add oil then sauté garlic, ginger and onions.",
-          "Add the pork mince and cook until brown in colour.",
-          "Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-          "Add the squash cook for 3 minutes.",
-          "Add the okra and cook for 3 more minutes.",
-          "Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-        ]
-      
-  },
-   {
-    "id": 14,
-    "img" : "img/sourdough.jpg",
-    "title" : "<p>Sourdough Barley Bread</p>",
-    "content" : "<p> made from barley flour derived from the grain of the barley plant.</p>",
-    
-    "ingredients":[
-          {
-            "qty": "22 g 100% hydration sourdough starter, unfed",
-            "name": " hydration sourdough starter, unfed"
-          },
-          {
-            "qty": "137 g",
-            "name": "water at room temperature"
-          },
-          {
-            "qty": "110 g",
-            "name": "wheat flour"
-          },
-          {
-            "qty": "280 g",
-            "name": "whole barley flour"
-          },
-          {
-            "qty": "400 g",
-            "name": "wheat flour"
-          },
-          {
-            "qty": "6 tbsp",
-            "name": "wheat bran"
-          },
-          {
-            "qty": "370 ml",
-            "name": "water"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "salt"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "2 tsp",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "55 mins +5 hrs proofing",
-        "cookingtime": "35 mins",
-        "totaltime": "6 hrs and 30 minutes",
-        "directions": [
-          "In the morning, in a large bowl mix the flours and wheat bran with water and the overnight starter until well combined. Let the dough rest (autolyse) for 30 minutes.",
-          "Add the salt and knead by hand for 5-8 minutes.",
-          "Wipe the inside of a wide bowl with a little vegetable oil. Place the dough into this wide bowl so the dough can be stretched and folded without removing it from the bowl. Cover with plastic wrap. ",
-          "Let the dough ferment at room temperature for 2.5 hours with folds at 50 minutes. The folding is shown here.",
-          "Turn the dough out onto a floured surface. Divide it in two pieces. Shape them in form of a loaf. Sprinkle the loaves with flour, cover  and let rest for 15 minutes.",
-          "Preheat the oven to 475 F (240 C) with baking stone or in case you don't have one preheat a baking sheet. Place a small pot with  water at the base of the oven to create steam.",       
-        "Bake for 15 minutes with steam then remove the pot with water from the oven and bake for another 20-25 minutes without steam. ",
-      "Cool on a wire rack. Let it cool completely before cutting  for at least 2 hrs. "
-
-]
-  },
-   {
-    "id": 15,
-    "img" : "img/white bread.jpg",
-    "title" : "<p>White Bread</p>",
-    "content" : "<p>Made rom the wheat floor from which the bran and germ layers ave been removed from the whole wheatberry as part of the floor grinding</p>",
-
-     "ingredients":[
-          {
-            "qty": "1 large bunch",
-            "name": "spinach"
-          },
-          {
-            "qty": "1/2 small",
-            "name": "butternut squash"
-          },
-          {
-            "qty": "200 g",
-            "name": "sliced okra"
-          },
-          {
-            "qty": "250 g",
-            "name": "fatty minced pork"
-          },
-          {
-            "qty": "6 cups",
-            "name": "chicken stock"
-          },
-          {
-            "qty": "1",
-            "name": "finely chopped onion"
-          },
-          {
-            "qty": "4 cloves",
-            "name": "minced garlic"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "fish sauce"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "1",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "15 minutes",
-        "cookingtime": "20 minutes",
-       "totaltime": "4-5 servings",
-         "directions": [
-          "In a pot add oil then sauté garlic, ginger and onions.",
-          "Add the pork mince and cook until brown in colour.",
-          "Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-          "Add the squash cook for 3 minutes.",
-          "Add the okra and cook for 3 more minutes.",
-          "Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-        ]
-      
-  },
-  
-  {
-    "id": 16,
-    "img" : "img/milk rolls.jpg",
-    "title" : "<p>Milk Bread Rolls</p>",
-    "content" : "<p>These rolls are incredibly soft and airy</p>",
-    
-    "ingredients":[
-          {
-            "qty": "1 large bunch",
-            "name": "spinach"
-          },
-          {
-            "qty": "1/2 small",
-            "name": "butternut squash"
-          },
-          {
-            "qty": "200 g",
-            "name": "sliced okra"
-          },
-          {
-            "qty": "250 g",
-            "name": "fatty minced pork"
-          },
-          {
-            "qty": "6 cups",
-            "name": "chicken stock"
-          },
-          {
-            "qty": "1",
-            "name": "finely chopped onion"
-          },
-          {
-            "qty": "4 cloves",
-            "name": "minced garlic"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "fish sauce"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "1",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "15 minutes",
-        "cookingtime": "20 minutes",
-        "totaltime": "4-5 servings",
-        "directions": [
-          "In a pot add oil then sauté garlic, ginger and onions.",
-          "Add the pork mince and cook until brown in colour.",
-          "Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-          "Add the squash cook for 3 minutes.",
-          "Add the okra and cook for 3 more minutes.",
-          "Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-        ]
-      
-  },
-   {
-    "id": 17,
-    "img" : "img/potato bread.jpg",
-    "title" : "<p>Sweet potato Bread</p>",
-    "content" : "<p>Back in the philippines ube is te purple yam that is famous as a dessert, jam or ice cream</p>",
-    
-    "ingredients":[
-          {
-            "qty": "1 large bunch",
-            "name": "spinach"
-          },
-          {
-            "qty": "1/2 small",
-            "name": "butternut squash"
-          },
-          {
-            "qty": "200 g",
-            "name": "sliced okra"
-          },
-          {
-            "qty": "250 g",
-            "name": "fatty minced pork"
-          },
-          {
-            "qty": "6 cups",
-            "name": "chicken stock"
-          },
-          {
-            "qty": "1",
-            "name": "finely chopped onion"
-          },
-          {
-            "qty": "4 cloves",
-            "name": "minced garlic"
-          },
-          {
-            "qty": "1 tbsp",
-            "name": "minced ginger"
-          },
-          {
-            "qty": "1",
-            "name": "fish sauce"
-          },
-          {
-            "qty": "1",
-            "name": "freshly ground black pepper"
-          },
-          {
-            "qty": "1",
-            "name": "oil"
-          }
-        ],
-        "preparationtime": "15 minutes",
-        "cookingtime": "20 minutes",
-        "totaltime": "4-5 servings",
-         "directions": [
-          "In a pot add oil then sauté garlic, ginger and onions.",
-          "Add the pork mince and cook until brown in colour.",
-          "Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-          "Add the squash cook for 3 minutes.",
-          "Add the okra and cook for 3 more minutes.",
-          "Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-        ]
-      },
-
-  ];
-  this.state = [
       {
-        "bind": {
-          "directions":[],
-          "ingredients_qty":[],
-          "ingredients_name":[]
-        }
-      }
+        "id": 2,
+        "name": "Ktone Double Neck Acousic Guitar",
+        "details": "For those searching for the perfect guitar to add a little variety to their playing, the Ktone Acoustic Electric Double Neck Guitar merges together the versatility of the double neck guitar with the popular sound of the acoustic electric guitar.",
+        "image": "img/ktone double neck acousic guitars.jpg",
+       "price": "₱14,302"
+      },
+      {
+        "id": 3,
+        "name": "Luna Acoustic Guitar",
+        "details": "The Muse M-Burst is part of the Luna Muse series of acoustic guitars which are a tribute to creative inspiration. Like their namesakes, the muses, these instruments will fire the creative spirit with their mellow tones and beautiful, rich woods. Lovingly designed to incorporate the delicate twists and turns of ancient Celtic artwork, the Muse guitars are built to please players who seek instruments that produce exquisite sound and offer unparalleled playing comfort. On the heelcap of each Muse is a Celtic trisele, the trinity of life and symbol of the goddess in three forms: maiden, mother and crone. Like music, this ancient symbol represents the eternal rhythm of life.",
+        "image": "img/Luna-acoustic.jpg",
+        "price": "₱14,322"
+      },
+      {
+        "id": 4,
+        "name": "Luna Fauna Phoenix Acoustic Guitar",
+        "details": "he triumphant spirit of the phoenix is perfectly captured in Luna's Phoenix acoustic/electric guitar. The soaring bird in abalone is stunning against the black lacquer-look finish of this cutaway folk style instrument. Constructed of select spruce and mahogany, the folk-style Phoenix guitar is equipped with B-Band T35 preamp with built-in tuner. The Luna Fauna Phoenix is a distinctive guitar for players who celebrate the timeless joy of music. ",
+        "image": "img/Luna-Fauna-Phoenix-Acoustic-Guitar.jpg",
+       "price": "₱21,322"
+      },
+      {
+        "id": 5,
+        "name": "Acoustic Guitar with Pick",
+        "details": "The shapes, sizes, and thicknesses of regular picks are just as variable as their composition. A rounded triangle, as pioneered by D’Andrea, is the most common shape, and a teardrop with a pointy tip, like on Dunlop’s Jazz III, is a popular variation. Other familiar shapes include the equilateral triangle and the shark-fin shape—kind of the Swiss Army knife of plectrums with its various points for string contact.",
+        "image": "img/Acoustic Guitar with Pick.jpg",
+        "price": "₱13,322"
+      },
+      {
+
+        "id": 6,
+        "name": "Classical Guitar with Fanned Frets",
+        "details": "Fanned frets (multiscale fingerboard) allow for an optimal scale length for each string (freely vibrating string length). This is based simply on physical laws. The lower the pitch of a string, the longer it should be. Treble strings may be correspondingly shorter. For the presented guitar, this results in a scale length from 63.5 in treble to 66.5 cm in the bass range. The multiscale fretboard allows the guitarist a more ergonomic, fan-like hand movement, hence the name fanned frets. With a 7-string guitar, fanned frets are even more important in order to achieve the full virtuosity of playing. Fanned frets also provide 100% intonation. Therefore a special bridge has to be developed. The trick with this task is, not to spoil the design of the guitar.",
+        "image": "img/7-string Classical Guitar with Fanned Frets.jpg",
+        "price": "₱12,302"
+      },
+      {
+
+        "id": 7,
+        "name": "Kiesel Aries Bevel-top Bolt Neck Electric Guitar",
+        "details": "The Kiesel Guitars Custom Shop is excited to offer the all-new Aries A6 bevel-top bolt neck guitar. The A6 is modeled on the popular SCB6, with similar aesthetics and sleek and stylish looks in a 24-fret, 25.5 scale bolt-on neck configuration. A newly-designed easy-access neck joint with recessed ferrules, Kiesel Lithium pickups and dual carbon-fiber neck rods elevate the A6 to the ranks of elite instruments.",
+        "image": "img/A6 KIESEL ARIES BEVEL-TOP BOLT NECK ELECTRIC GUITAR.jpg",
+        "price": "₱13,642"
+      },
+       {
+
+        "id": 9,
+        "name": "Boulder Creek Classical Guitars",
+        "details": "Played au natural, the ECRM6-N presents a round, warm voice with enough sweetness to give it a little bloom and shimmer, though this guitar might be considered a touch “muted” in many circumstances. It certainly offers less volume than the ECR4-NS, which is no great surprise given its more trim dimensions and alternate body woods. Amped up, however, the ACUS-4TR pickup and preamp system livens up the guitar’s acoustic voice and minimizes any constraints of volume or presence, while the laminated construction contributes to an electric-acoustic instrument with excellent resistance to feedback.",
+        "image": "img/Boulder Creek Classical Guitars.jpg",
+        "price": "₱9,322"
+      },
+      {
+
+        "id": 10,
+        "name": "Gretsch Guitars G5420T Electromatic Hollowbody Electric Guitar",
+        "details": "The G5420T Electromatic Hollowbody Electric Guitar is a sharp Gretsch guitar with a bound single-cutaway hollowbody featuring sound-post bracing and elegant bound f-holes. Other features include a maple neck, bound rosewood fingerboard with 22 medium jumbo frets and hump-block pearloid inlays, silver plexi pickguard, three-position pickup switch, classic  arrow control knobs, rosewood-based Adjusto-Matic bridge and Bigsby-licensed B60 vibrato tailpiece, vintage-style open-back tuners and chrome-plated hardware.",
+        "image": "img/Gretsch Guitars G5420T Electromatic Hollowbody Electric Guitar.jpg",
+        "price": "₱10,302"
+      },
+      {
+
+        "id":11,
+        "name": "Takamine EG124C Classical Guitar",
+        "details": "The sound you can get from the Takamine classical EG124C is excellent. The body projects a warm bass and soft highs.  Making it sound more much more expensive than it actually is.",
+        "image": "img/Takamine EG124C Classical Guitar.jpg",
+        "price": "₱12,332"
+      },
+      {
+
+        "id": 12,
+        "name": "STC  Solid Red Cedar Top Classical Guitar",
+        "details": "A nice quality classical nylon strings guitar, playable and with good sound and intonation. Manufactured in the Czech republic. Mahogany back and sides and solid red cedar top, with gloss finish.",
+        "image": "img/STC  solid red cedar top classical guitar.jpg",
+        "price": "₱13,302"
+      },
+      {
+
+        "id": 13,
+        "name": "Squier Mini Strat Electric Guitar",
+        "details": "The Squier Mini Strat Electric Guitar is a totally capable starter electric guitar. With 20 frets, it's perfect for small hands. Features 3 single-coil pickups, master volume and tone controls, rosewood fretboard, and a hardtail bridge. ",
+        "image": "img/squier-mini-strat-electric-guitar.jpg",
+        "price": "₱19,302"
+      },
+      {
+
+        "id": 14,
+        "name": "Luna Acoustic",
+        "details": "The beautiful soundhole design seems to pop right off the Fauna Butterfly's gorgeous quilted maple top. The guitar also features a mahogany neck with rosewood fingerboard (with Luna signature moonface fretmarkers) which gives it a real inviting tone, and B-Band preamp with 4-band EQ and digital tuner when you are plugged in.",
+        "image": "img/Luna-acoustic.jpg",
+        "price": "₱8,212"
+      },
+      {
+
+        "id": 15,
+        "name": "Epiphones Electric Guitar",
+        "details": "This guitar has a very powerful sound. Just sitting there, it steals the show from my Fenders with its impeccable finish, its flame maple top, and its neck inlays. I'd highly recommend this guitar and would definitely replace it with the same model if lost or stolen. The thing that I like best about this guitar is the beefy sound.",
+        "image": "img/epiphones electric guitars.jpg",
+        "price": "₱18,432"
+      },
+      
+       
     ];
+      
+  
   }
-    
 
   render(html, component){
 
@@ -1163,65 +128,48 @@ class App{
 
     component.innerHTML = html;
   }
+   
 
+guitarDesign(){
+   
+    let name = document.getElementById('guitar2');
+    let details = document.getElementById('guitar3');
+    let image = document.getElementById('guitar5');
+    let price = document.getElementById('guitar7');
+  
 
-createRecipe(){
-    let id = document.getElementById('recipe_id');
-    let name = document.getElementById('recipe_title');
-    let description = document.getElementById('recipe_description');
-    let img = document.getElementById('recipe_img');
-    let preparationtime = document.getElementById('recipe_preparationtime');
-    let cookingtime = document.getElementById('recipe_cookingtime');
-    let totaltime = document.getElementById('recipe_totaltime');
-    
-    let dummyIngredients = [];
-    for(let i=0;i<this.state[0].bind.ingredients_qty.length;i++){
-      dummyIngredients.push({
-        "qty" : this.state[0].bind.ingredients_qty[i],
-        "name" : this.state[0].bind.ingredients_name[i]
-      });
-    }
-    let ingredients = dummyIngredients;
-
-    let dummydirections = [];
-    for(let i=0;i<this.state[0].bind.directions.length;i++){
-      dummydirections.push(this.state[0].bind.directions[i]);
-    }
-    let directions = dummydirections;
-
-    let recipe = {      
-      "id": id.value,
-      "title": title.value,
-      "content": content.value,
-      "img": img.value,
-      "ingredients":ingredients,
-      "preparationtime": preparationtime.value,
-      "cookingtime": cookingtime.value,
-      "totaltime": totaltime.value,
-      "directions": directions
+    let guitar = {      
+      
+      "name": name.value,
+      "details": details.value,
+      "image": image.value,
+      "price": price.value
+     
     };
 
 
-    this.recipe.push(recipe);
+    this.guitar.push(guitar);
 
-    //Clear Fields
-    this.state[0].bind.directions = this.state[0].bind.ingredients_qty = this.state[0].bind.ingredients_name = [];
-    id.value = title.value = content.value = img.value = preparationtime.value = cookingtime.value = totaltime.value = ''; 
+    
+    name.value = details.value = image.value = ''; 
   } 
 
-  deleteRecipe(key){
-    let r = this.recipe;
+
+  guitarDelete(key){
+    let r = this.guitar;
     for(let i=0;i<r.length;i++){
       if(r[i].id == key){
-        this.recipe.splice(i,1);
+        this.guitar.splice(i,1);
         break;
       }
     }   
-    this.recipeLayout();
+    this.guitarList();
   }
+ 
 
-  findRecipeByID(id){
-    let r = this.recipe;
+   
+  SearchGuitarById(id){
+    let r = this.guitar;
     for(let i=0;i<r.length;i++){
       if(id==r[i].id){
         return r[i];
@@ -1229,527 +177,447 @@ createRecipe(){
     }
   } 
 
-  findRecipeByTitle(title){
+  SearchGuitar(name){
     let objects = [];
-    let r = this.recipe;
+    let r = this.guitar;
     for(let i=0;i<r.length;i++){
-      let expr = (r[i].title.toUpperCase().indexOf(title.toUpperCase()) > -1);
-     
+      let expr = (r[i].name.toUpperCase().indexOf(name.toUpperCase()) > -1);
       if(expr){
         objects.push(r[i]);
       }
     }
     return objects;
   }
-
-  bindRecipeNewDirections(val,id){
-    let bind = this.state[0].bind.directions;
-    bind[id] = val;
-    // console.log(bind);
-  } 
-
-  bindRecipeNewIngredients(val,id,obj){
-    let bind = null;
-    if(obj === "qty"){
-      bind = this.state[0].bind.ingredients_qty;
-    }
-    else if(obj === "name"){
-      bind = this.state[0].bind.ingredients_name;
-    }
-    bind[id] = val;
-   
-  } 
 }
+
 
 class Component extends App{
   constructor(){
+    
     super();
   }
-  recipeLayout(){
-    let html =`
-      
-</nav>
-       <nav>
-    <div class="nav-wrapper yellow darken-4">
-    <a href="#" onclick="component.recipeLayout()" class="brand-logo">&nbsp;&nbsp;Bread Market</a>
-<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            
-        
 
+guitarDesignLayout(){
+  let html = `
+
+<nav>
+    <div class="nav-wrapper  #26a69a teal lighten-1">
+      <a href="# class="brand-logo"> &nbsp&nbsp&nbsp&nbspMyGuitar </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="#" onclick="component.recipeList()"><i class="waves-effect waves-light btn-large">Bread List</i></a></li>
-        <li><a href="#" onclick="component.recipeCreate()"><i class="waves-effect waves-light btn-large">Create Bread</i></a></li>
- </ul>
- <ul class="side-nav" id="mobile-demo">
-   <li><a href="#" onclick="component.recipeList()"><i class="waves-effect waves-light btn-large">Bread List</i></a></li>
-        <li><a href="#" onclick="component.recipeCreate()"><i class="waves-effect waves-light btn-large">Create Bread</i></a></li>
-        
-        
+      <li>
+      <li><a href="#" onclick="component.Home()"><i class="waves-effect waves-light btn-large">HOME</i></a></li>
+     <li><a href="#" onclick="component.guitarList()"><i class="waves-effect waves-light btn-large">Guitar List</i></a></li> 
+   <li><a href="#" onclick="component.latestGuitar()"><i class="waves-effect waves-light btn-large">Create</i></a></li>
+  
       </ul>
-    </div>  
-  </nav>
+
+     
+    </div>
+    </nav>
+
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/background1.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Go where the guitar takes you ..</h3>   
+        </div>
+      </li>
+      <li>
+        <img src="img/background2.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Music is what is feeling sounds Like ..</h3>
+        </div>
+      </li>
+      <li>
+        <img src="img/background3.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h5 class="light grey-text text-lighten-3">Perfect Hands Make Perfect Music</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/background4.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>MUSIC IS LIFE</h3>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+
   
-  
-  <div id="recipeSlides"></div>
-    <div id="recipeRecent"></div>
-        <div id="recipeView"></div>
-        <div id="recipeList"></div>
-        <div id="recipeCreate"></div>
-    
 
 
-        <footer class="page-footer yellow darken-4">
+</div>
+
+
+         <div id="Home"></div>
+        <div id="guitarRecent"></div>
+        <div id="Guitar"></div>
+        <div id="guitarList"></div>
+        <div id="latestGuitar"></div>
+       
+         <div id="updateGuitar"></div>
+        
+        <center>
+        <footer class="page-footer #26a69a teal lighten-1">
           <div class="container ">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">JabzzKillerBread</h5>
-                <p class="grey-text text-lighten-4">Jabzz Killer Bread is an International company based in Milwaukie, Oregon, which makes organic whole-grain breads. It was founded in 2005 by jab Dahl, who learned the baking trade growing up in his family bakery
-
+            <div class="row ">
+              <div class="col l6 center-align">
+                <h5 class="white-text">Play Guitar</h5>
+                <p class="grey-text text-lighten-4">The Guitar is a small orchestra.It is a polyphonic.
+                Every string is a different color and a different voice ..</p>
                 .</p>
               </div>
               <div class="col l4 offset-20 s2">
-                <h5 class="white-text">Categories</h5>
-                <ul>
-                  <li>
-                    <a class="grey-text text-lighten-3" href="#" onclick="component.recipeLayout()">
-                      <!-- <i class="material-icons left">dashboard</i> -->
-                      Home</a></li>
-                      <li><a class="grey-text text-lighten-3" href="#" onclick="component.recipeList()">
-                        <!-- <i class="material-icons left">assignment</i> -->
-                        Recipes</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#" onclick="component.recipeCreate()">
-                          <!-- <i class="material-icons left">dashboard</i> -->
-                          Create</a></li>
-                </ul>
+               
+                
+                 
               </div>
             </div>
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2014 Copyright Text
+            © 2016 Copyright Text
             
             </div>
           </div>
-        </footer>
+          </center>
 
-       `;
-this.reRender(`
+            
+
+
+`;
+
+    this.reRender(`
       ${html}
 
       `,document.getElementById("app"));
-     this.recipeSlides();
-    this.recipeRecent();
-   
-
-  }
-   recipeSlides(){
-    let html =`
-    <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="${this.media[0].img}"> <!-- random image -->
-  <div class="${this.media[0].alignment}">
-         <h3>${this.media[0].slogan}</h3>
-          
-        </div>
-      </li>
-      <li>
-              <img src="${this.media[1].img}"> <!-- random image -->
-  <div class="${this.media[1].alignment}">
-          <h3>${this.media[1].slogan}</h3>
-         
-        </div>
-      </li>
-      <li>
-              <img src="${this.media[2].img}"> <!-- random image -->
-  <div class="${this.media[2].alignment}">
-          <h3>${this.media[2].slogan}</h3>
-         
-        </div>
-      </li>
-      <li>
-        <img src="${this.media[3].img}"> <!-- random image -->
-  <div class="${this.media[3].alignment}">     
-          <h3>${this.media[3].slogan}</h3>
-          <h5 class="light grey-text text-lighten-3">"Makes Everday Delicious"</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
-  `;
- html += `</div>`;
-
-    this.render(`   
-      ${html}
-      `,document.getElementById("recipeSlides"));
-  }
-
-      recipeRecent(){
-    
-    let html = `
-      <h5 class="center-align">Recent Recipes</h5>
-      <div class="row">
-    `;
-
-    let r = this.recipe;
-    let count = 0;
-    for(let i=(r.length-1);i>=0;i--){
-      if(count++ === 6)break;
-      html+= `
-       
-      <div class="row">
- <div class="col s4 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="${r[i].img}">
-              <span class="card-title ">${r[i].title}</span>
-            </div>
-            <div class="card-content">
-              <p>${r[i].content}</p>
-              
-            <div class="card-action">
-        <a href="#" onclick="component.recipeView(${r[i].id})">More</a>
-            </div>
-          </div>
-        </div>
-        </div>
-        
-
-
-
-      `;
-    }
-    html += `</div>`;
-
-    this.render(`   
-      ${html}
-      `,document.getElementById("recipeRecent"));
-     $('#recipeView').show();
      
   }
-  
-      
 
-  recipeView(id){
-    let r = this.findRecipeByID(id);
+Guitar(id){
+    let r = this.SearchGuitarById(id);
 
-    let html = `
-      
-      <h5 class="center-align">${r.title}</h5>
+     let html = `
+      <div class="nav-wrapper  #26a69a teal lighten-1">
+      <h5 class="center-align">${r.name}</h5>
+      </div>
       <div class="row">       
         <div class="col s12 m12">
           <div class="card horizontal small">
             <div class="card-image">
-              <img src="${r.img}">
+              <img src="${r.image}">
             </div>
+
             <div class="card-stacked">
               <div class="card-content">
-                <p>${r.content}</p>
+                <p>${r.details}</p>
+                <p>${r.price}</p>
               </div>
+                
+              
+              
               <div class="card-action small">               
-                <span onclick="component.deleteRecipe(${r.id})" class="waves-effect waves-light btn-large "">DELETE</span>
-                <span onclick="component.recipeLayout()" class="waves-effect waves-light btn-large red""><--HOME</span>
+                <a class="waves-effect waves-light btn-large red" onclick="component.guitarDelete(${r.id})"><i class="material-icons left">delete</i><span>Delete</span></a>
+                <span onclick="component.guitarList(${r.id})" class="waves-effect waves-light btn-large red""><--BACK</span>
+                
               </div>
             </div>          
           </div>        
         </div>      
       </div>
     `;
-
-    html += `
-      <div class="row">
-        <table class="striped">
-          <thead>
-            <tr>
-              <th>Preparation Time</th>
-              <th>Cooking Time</th>
-              <th>Total Time</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>${r.preparationtime}</td>
-              <td>${r.cookingtime}</td>
-              <td>${r.totaltime}</td>
-            </tr>         
-          </tbody>
-        </table>
-      </div>
-    `;
-
-    html += `
-      <div class="row">       
-        <div class="col s6 m6">
-          <h6>Ingredients</h6>
-          <ul class="collection">
-    `;
-
-    for(let i=0;i<r.ingredients.length;i++){
-      let ri = r.ingredients[i];
-      html += `
-            <li class="collection-item avatar">
-              <i class="material-icons circle">star</i>
-              <span class="title">${ri.qty}</span>
-              <p>${ri.title}<br>
-                
-              </p>
-              
-            </li>
-      `;
-    }
-
-    html += `       
-          </ul>
-        </div>
-        <div class="col s6 m6">
-          <h6>Directions</h6>
-          <ul class="collection">
-    `;
-
-    for(let i=0;i<r.directions.length;i++){
-      let rp = r.directions[i];
-      html += `
-            <li class="collection-item avatar">
-              <i class="material-icons circle">done</i>
-              <span class="title">Step ${i+1}</span>
-              <p>${rp}<br>
-                
-              </p>
-              
-            </li>
-      `;
-    } 
-
-    html += `
-          </ul>
-        </div>      
-      </div>
-    `;
-
     this.reRender(`   
       ${html}     
-      `,document.getElementById("recipeView"));
-    $('#recipeView').show();
+      `,document.getElementById("Guitar"));
+     $('#updateGuitar').hide();
+    $('#Guitar').show();
+    $('#guitarRecent').hide();
+    $('#guitarList').hide();
+    $('#latestGuitar').hide();
     
-    $('#recipeRecent').hide();
-    $('#recipeList').hide();
-    $('#recipeCreate').hide();
-   
+
+      $('#Home').hide();
   }
 
+  guitarList(){
+    let html = `
 
-        recipeList(){
-          let html =`
-         
-        
-          <div class="nav-wrapper green lighten-4">
-  <form>
-    <div center class="input-field">
-     <input onkeyup="component.recipeListItems(this.value)" id="search" type="search" placeholder="Search Bread here ..." required>
-      <label for="search"><i class="material-icons"></i> </label>
-      <i class="material-icons">close</i>
-    </div>
-  </form>
-</div>
+        <nav>
+          <div class="nav-wrapper white">
+          <form>
+            <div class="input-field">       
+              <input onkeyup="component.guitarItems(this.value)" id="search" type="search" placeholder="Search" required>
+              <label for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
 
-
-`;
-
-html +=`
-<div class="row" id="recipeListItems">
     `;
-      let r = this.recipe;
+
+    html += `
+      <div class="row" id="guitarItems">
+    `;
+    let r = this.guitar;
     for(let i=0;i<r.length;i++){
       html+= `
-       <div class="row">
- <div class="col s12 m4">
-          <div class="card">
+      <div class="col s12 m4">
+          <div class="card small hoverable">
             <div class="card-image">
-              <img src="${r[i].img}">
-              <span class="card-title dark black-text text-darken-3">${r[i].title}</span>
+              <img src="${r[i].image}">
+              <span class="card-title">${r[i].name}</span>
             </div>
             <div class="card-content">
-              <p>${r[i].content}</p>
+              <p>${r[i].details}</p>
+            </div>
             <div class="card-action">
-          <a href="#" onclick="component.recipeView(${r[i].id})">More</a>
+              <a href="#" onclick="component.Guitar(${r[i].id})">Details</a>
             </div>
           </div>
         </div>
-        </div>
+      `;
+    }
 
- `;
-}
-      
+    html += `</div>`;
 
-        html +=
-        `</div>`;
-        
-        this.reRender(`
-          ${html}
-          `,document.getElementById("recipeList"));
-       $('#recipeList').show();
-   
-    $('#recipeView').hide();
-    $('#recipeRecent').hide();
+    this.reRender(`
+      ${html}
+      `,document.getElementById("guitarList"));
+     $('#updateGuitar').hide();
+    $('#guitarList').show();
+    $('#Guitar').hide();
+    $('#guitarRecent').hide();
+    $('#latestGuitar').hide(); 
        
-    $('#recipeCreate').hide(); 
-       
+         $('#Home').hide();
   }
-           recipeListItems(title){
+
+guitarItems(name){
     let html = ``;
-    let r = this.findRecipeByTitle(title);
+    let r = this.SearchGuitar(name);
     for(let i=0;i<r.length;i++){
       html+= `
         <div class="col s12 m4">
           <div class="card small hoverable">
             <div class="card-image">
-              <img src="${r[i].img}">
-              <span class="card-title">${r[i].title}</span>
+              <img src="${r[i].image}">
+              <span class="card-title">${r[i].name}</span>
             </div>
             <div class="card-content">
-              <p>${r[i].content}</p>
+              <p>${r[i].details}</p>
             </div>
             <div class="card-action">
-              <a href="#" onclick="component.recipeView(${r[i].id})">More</a>
+              <a href="#" onclick="component.Guitar(${r[i].id})">More</a>
             </div>
           </div>
         </div>
       `;
     }   
+
     this.reRender(`
       ${html}
-      `,document.getElementById("recipeListItems"));
-    $('#recipeList').show();
+      `,document.getElementById("guitarItems"));
+     $('#updateGuitar').hide();
+    $('#guitarList').show();
+    $('#Guitar').hide();
+    $('#guitarRecent').hide();  
+    $('#latestGuitar').hide();
     
-    $('#recipeView').hide();
-    $('#recipeRecent').hide();  
-    $('#recipeCreate').hide();
+        $('#Home').hide();    
+  }
+  
+  guitarRecent(){
     
+    let html = `
+
+      <div class="row">
+    `;
+
+    let r = this.guitar;
+    let count = 0;
+    for(let i=(r.length-1);i>=0;i--){
+      if(count++ === 15)break;
+      html+= `
+        <div class="col s12 m4">
+          <div class="card small hoverable">
+            <div class="card-image">
+              <img src="${r[i].image}">
+              <span class="card-title">${r[i].name}</span>
+            </div>
+            <div class="card-content">
+              <p>${r[i].details}</p>
+            </div>
+            <div class="card-action">
+              <a href="#" onclick="component.Guitar(${r[i].id})">Details</a>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    html += `</div>`;
+
+    this.render(`   
+      ${html}
+      `,document.getElementById("guitarRecent"));
   }
 
-  recipeCreate(){
+
+  latestGuitar(){
     let html = `
-      <div class="row">
-        <form class="col s12">
-        <h5 class="center-align">Create New Recipe</h5>
-        <button onclick="component.createRecipe()" class="btn waves-effect waves-light">Save</button>
-          <div class="row">
-            <div class="input-field col s6">
-              <input disabled value="${this.recipe.length+1}" id="recipe_id" type="text" class="validate">
-            </div>
-            <div class="input-field col s6">
-              <input id="recipe_name" type="text" class="validate">
-              <label for="recipe_name">NAME</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s6">
-              <input id="recipe_description" type="text" class="validate">
-              <label for="recipe_description">DESCRIPTION</label>
-            </div>
-            <div class="input-field col s6">
-              <input id="recipe_photo" type="text" class="validate">
-              <label for="recipe_photo">PHOTO</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s4">
-              <input id="recipe_preparationtime" type="text" class="validate">
-              <label for="recipe_preparationtime">PREPARATION TIME</label>
-            </div>
-            <div class="input-field col s4">
-              <input id="recipe_cookingtime" type="text" class="validate">
-              <label for="recipe_cookingtime">COOKING TIME</label>
-            </div>
-            <div class="input-field col s4">
-              <input id="recipe_totaltime" type="text" class="validate">
-              <label for="recipe_totaltime">TOTAL TIME</label>
-            </div>
-          </div>
 
-
+     
+          
+       <div class="row">
+            <div class="input-field col s6 ">
+           
+             
+            </div>
+              <div class="row">
+          <div class="input-field col s6 white-text ">
+              <input id="guitar2" type="text" class=" validate">
+              <label for="guitar2">Type of Guitar</label>
+            </div>
+          </div>
+          
           <div class="row">
-            <div class="input-field col s6">
-              <h6> INGREDIENTS</h6>
-              <button onclick="component.recipeNewIngredients()" class="btn-floating waves-effect waves-light"><i class="material-icons">add</i></button>
-              <div id="recipeNewIngredients"></div>
+            <div class="input-field col s6 white-text">
+              <input id="guitar3" type="text" class="validate">
+             <label for="guitar3">Guitar Details</label>
             </div>
-            <div class="input-field col s6">
-              <h6>PROCEDURES</h6>
-              <button onclick="component.recipeNewDirections()" class="btn-floating waves-effect waves-light"><i class="material-icons">add</i></button>
-              <div id="recipeNewDirections"></div>
+            <div class="row">
+            <div class="input-field col s6 white-text">
+              <input id="guitar7" type="text" class="validate">
+             <label for="guitar7">Guitar Price</label>
             </div>
-          </div>          
-        </form>
-      </div>      
+
+            <div class="row">
+            <div class="input-field col s6 white-text">
+              <input id="guitar5" type="text" class="validate">
+              <label for="guitar5">Enter Image or Link Address</label>
+            </div>
+       
+        <div align="right">
+       
+      
+         <button onclick="component.guitarList()"><i class="waves-effect waves-light btn-large">BACK</i></a></li>
+        <a class="waves-effect btn violet center" onclick="component.guitarDesign()"><i class="material-icons left">save</i><span>save</span></a>
+         </div>
+        
+      
+
     `;
 
     this.reRender(`
       ${html}
-      `,document.getElementById("recipeCreate"));
-    $('#recipeCreate').show();
-    $('#recipeSlides').show();
-    $('#recipeList').hide();
-    $('#recipeView').hide();
-    $('#recipeRecent').hide();
-    
-    this.state[0].bind.directions = [];   
-    this.state[0].bind.ingredients_qty = [];    
-    this.state[0].bind.ingredients_name = [];   
+      `,document.getElementById("latestGuitar"));
+    $('#latestGuitar').show();
+    $('#guitarList').hide();
+    $('#Guitar').hide();
+    $('#guitarRecent').hide();
+     
+    $('#Home').hide();    
   }
+  deletAcoustic(){
+    let html = `
 
-  recipeNewDirections(){
-    let bind = this.state[0].bind.directions;
-    bind.push("");    
-    
-    let html = ``;
-    for(let i=0;i<bind.length;i++){
-      let decode_bind = `onkeyup="component.bindRecipeNewDirections(this.value,${i})"`;
-      html += `
-        <div class="row">
-          <div class="input-field col s12">
-            <input ${decode_bind} value="${bind[i]}" type="text" />         
+     
+          
+       <div class="row">
+            <div class="input-field col s6 ">
+           
+              <input disabled value="${this.guitar.length+0}" id="guitar" type="text"class=" validate" >
+            </div>
+              <div class="row">
+          <div class="input-field col s6 ">
+              <input id="guitar2" type="text" class=" validate">
+              <label for="guitar2">Type of Guitar</label>
+            </div>
           </div>
-        </div>    
-      `;
-    }
+          
+          <div class="row">
+            <div class="input-field col s6 ">
+              <input id="guitar3" type="text" class="validate">
+             <label for="guitar3">Guitar Details</label>
+            </div>
+
+            <div class="row">
+            <div class="input-field col s6 ">
+              <input id="guitar5" type="white-text" class="validate">
+              <label for="guitar5">Enter Image or Link Address</label>
+            </div>
+       
+        <div align="right">
+       
+      
+         <button onclick="component.guitarList()"><i class="waves-effect waves-light btn-large">BACK</i></a></li>
+        <a class="waves-effect btn violet center" onclick="component.guitarDesign()"><i class="material-icons left">save</i><span>save</span></a>
+         </div>
+        
+      
+
+    `;
 
     this.reRender(`
       ${html}
-      `,document.getElementById("recipeNewDirections"));
-  }
-
-  recipeNewIngredients(obj){
-    let bind_qty = this.state[0].bind.ingredients_qty;
-    let bind_name = this.state[0].bind.ingredients_name;
-    bind_qty.push("");    
-    bind_name.push("");   
+      `,document.getElementById("latestGuitar"));
+    $('#latestGuitar').show();
+    $('#guitarList').hide();
+    $('#Guitar').hide();
+    $('#guitarRecent').hide();
     
-    let html = ``;
-    for(let i=0;i<bind_qty.length;i++){
-      let decode_bind_qty = `onkeyup="component.bindRecipeNewIngredients(this.value,${i},'qty')"`;
-      let decode_bind_name = `onkeyup="component.bindRecipeNewIngredients(this.value,${i},'name')"`;
-      html += `
-        <div class="row">
-          <div class="input-field col s12">
-            <input ${decode_bind_qty} value="${bind_qty[i]}" type="text" />         
-          </div>
-        </div>  
-        <div class="row">
-          <div class="input-field col s12">
-            <input ${decode_bind_name} value="${bind_name[i]}" type="text" />         
-          </div>
-        </div>    
-      `;
-    }
-
+    $('#Home').hide();    
+  }
+  updateGuitar(id){
+  
+    let html = `
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="guitarName" type="text" class="validate" value="${this.guitar[id].name}">          
+        </div>
+        <div class="input-field col s6">
+          <input id="guitarDetails" type="text" class="validate" value="${this.guitar[id].details}">
+        </div>
+        <div class="input-field col s6">
+          <input id="guitarImage" type="text" class="validate" value="${this.guitar[id].image}">
+        </div>
+      </div>
+      <a onclick="component.updateGuitarNow(${id})" class="waves-effect blue waves-light btn">Update</a>
+      <hr/>
+    `;  
     this.reRender(`
       ${html}
-      `,document.getElementById("recipeNewIngredients"));
-  } 
+      `,document.getElementById("updateGuitar"));   
 
+    $('#updateGuitar').show();
+    $('#latestGuitar').hide();
+    $('#guitarList').hide();
+    $('#Guitar').hide();
+    $('#guitarRecent').hide();
+   
+    $('#Home').hide();    
+  }
+
+  Home(){
+  let html=`
+
+
+  `;
+   this.reRender(`
+      ${html}
+      `,document.getElementById("latestGuitar"));
+    $('#latestGuitar').hide();
+    $('#guitarList').hide();
+    $('#Guitar').hide();
+    $('#guitarRecent').hide();  
+    
+    $('#Home').hide();  
 
 }
 
+} 
 let component = new Component();
-component.recipeLayout();
+component.guitarDesignLayout();
